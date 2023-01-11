@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("kepek/cool-background.png")
+  }
+ center {
+    color: #000000;
+ }
+ a:link {
+    color: #000000;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #000000;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
