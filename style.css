@@ -1,46 +1,86 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image:url("kepek/cool-background.png")
-  }
- center {
-    color: #000000;
- }
- a:link {
-    color: #000000;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: #000000;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #ffffff;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:active {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
- 
-  }
-  .row {
-    display: flex;
+  font-family: Arial, sans-serif;
+  background-image:url("kepek/cool-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+a {
+  width: auto;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 
-  }
-  
-  .column {
-    flex: 33.33%;
-    padding: 5px;
+}
+#row {
+  display: flex;
 
-  }
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+
+li {
+  float: left;
+  border-right:2px solid 	#7fcdff;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: 	#7fcdff;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.menu {
+  width: 807px;
+  height: 65.19px;
+}
+h1::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 40px;
+}
